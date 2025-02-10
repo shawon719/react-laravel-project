@@ -19,6 +19,7 @@ const Navbar = () => {
   const [rating, setRating] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for managing dropdown visibility
+  
 
   const handleScroll = () => {
     if (window.scrollY >= mainElementTop) {
@@ -75,12 +76,18 @@ const Navbar = () => {
   };
 
   return (
+    // // <div
+    // //   className={`navbar sticky top-0 z-10 bg-red bg-opacity-75 backdrop-blur-sm transition-transform duration-300 ${
+    // //     isNavbarVisible ? "translate-y-0" : "-translate-y-full"
+    // //   }`}
+    // >
     <div
-      className={`navbar sticky top-0 z-10 bg-white bg-opacity-75 backdrop-blur-sm transition-transform duration-300 ${
-        isNavbarVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
-      <div className="navbar-start flex items-center">
+  className={`navbar sticky top-0 z-10 bg-[#36244F] bg-opacity-75 backdrop-blur-sm transition-transform duration-300 ${
+    isNavbarVisible ? "translate-y-0" : "-translate-y-full"
+  }`}
+>
+
+      <div className="navbar-start flex items-center ">
         {/* Hamburger menu for small screens */}
         <button
           className="lg:hidden text-2xl sm:text-lg ml-2"
@@ -90,22 +97,22 @@ const Navbar = () => {
         </button>
 
         {/* Brand Name wrapped in a span */}
-        <span className="btn btn-ghost ml-2 text-xl text-[17px] lg:text-[20px]">
-          <a href="/">Courier Service</a>
+        <span className="btn btn-ghost ml-2 text-xl text-[27px] lg:text-[25px]">
+          <a href="/" className="text-white  lg:text-4xl">Courier Service</a>
         </span>
       </div>
 
       {/* Center menu */}
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex text-white text-lg text-[20px] ">
         <ul className="menu menu-horizontal px-1">
           <li>
             <a href="/">Home</a>
           </li>
-          <li>
+          <li >
             <a href="/about">About us</a>
           </li>
           <li>
-            <a href="">Notice Board</a>
+            <a href="/notice">Notice Board</a>
           </li>
           <li>
             <a href="">Supports</a>
@@ -114,7 +121,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar End with Login, Sign Up, and Profile Icon */}
-      <div className="navbar-end flex items-center space-x-4">
+      <div className="navbar-end flex items-center space-x-4 text-white text-lg">
         <div className="hidden lg:flex">
           <button className="btn btn-ghost text-sm">
             <a href="/login">Login</a>

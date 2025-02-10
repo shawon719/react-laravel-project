@@ -3,6 +3,8 @@ import { useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 // import myImage from './assets/my-image.jpg'; // Import image
 import Carousel from '../Carousal/Carousal';
+import WorkProgressFlowchart from '../../Work/WorkProgressFlowchart';
+import WhyChooseUs from '../../Work/WhyChooseUs';
 
 const Home = () => {
   const [searchLocation, setSearchLocation] = useState(""); // Store search location
@@ -166,8 +168,91 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* ed here  */}
+
+      {/*  */}
+      <section>
+      <div>
+        <div style={{ textAlign: "center", padding: "20px" }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+            Why First-track Courier Service (Pvt.) Ltd
+          </h1>
+          <p style={{ fontSize: "1.25rem" }}>
+            First-track is a household name to all in Bangladesh for having been
+            the pioneer of Courier and Parcel Services in this country. From the Corporate
+            Clients to the average person, all the persons have been availing the services of
+            Sundarban.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div>
+          <img
+            src="/src/assets/img/why/four.png"
+            alt="img"
+            style={{
+              width: "300px",
+              height: "240px",
+              marginLeft: "150px",
+            }}
+          />
+        </div>
+        <div style={{ width: "700px", marginLeft: "20px" }}>
+          <p>
+            <i
+              className="fa-solid fa-circle-check"
+              style={{ color: "green" }}
+            ></i>{" "}
+            It is reliable and the label is a trustworthy name to all who have taken, taking and
+            will take the services of this Company. The many years of service to the mass and to
+            the corporates have made it the service for all to take.
+          </p>
+          <p>
+            <i
+              className="fa-solid fa-circle-check"
+              style={{ color: "green" }}
+            ></i>{" "}
+            It is reliable and the label is a trustworthy name to all who have taken, taking and
+            will take the services of this Company. The many years of service to the mass and to
+            the corporates have made it the service for all to take.
+          </p>
+          <p>
+            <i
+              className="fa-solid fa-circle-check"
+              style={{ color: "green" }}
+            ></i>{" "}
+            It is reliable and the label is a trustworthy name to all who have taken, taking and
+            will take the services of this Company. The many years of service to the mass and to
+            the corporates have made it the service for all to take.
+          </p>
+        </div>
+      </div>
+    </section>
+
+      {/*  */}
 
       {/* branch list page end here */}
+
+
+              {/* Work Progress Flowchart Section */}
+      <div className="mb-12">
+        {/*  <WorkProgressFlowchart /> */}
+        <WorkProgressFlowchart></WorkProgressFlowchart>
+         
+      </div>
+
+
+      {/*  */}
+      <div>
+     
+      {/* <WhyChooseUs /> */}
+
+      <WhyChooseUs></WhyChooseUs>
+     
+    </div>
+
+      {/*  */}
     </>
   );
 };

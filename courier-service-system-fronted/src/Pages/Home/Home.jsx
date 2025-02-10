@@ -107,7 +107,8 @@ const Home = () => {
                   src="/src/assets/img/services/van-inscri.webp"
                   className="w-24 rounded-full"
                   alt="Avatar"
-                style={{margin:20}}/>
+                  style={{ margin: 20 }}
+                />
               </div>
 
               <div className="space-y-6">
@@ -145,6 +146,28 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* branch list page start */}
+
+      <section className="container mx-auto p-4">
+        <div className="border border-gray-400 p-5 rounded-lg">
+          <h1 className="text-5xl font-bold text-center">Our Location</h1>
+          <p className="text-center text-2xl mt-4">
+            Fast-track Courier Service has the most widespread network in
+            Bangladesh. Click below to view a list of all our Branches and
+            Agencies.
+          </p>
+          <div className="text-center mt-6">
+            <a
+              href='/b'
+              className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
+            >
+              View list
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* branch list page end here */}
     </>
   );
 };

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@shadcn/ui": "^0.0.4"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}

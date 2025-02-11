@@ -37,13 +37,13 @@ const Carousel = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/src/assets/img/carr1.png" alt="" style={{ height: 800 }} />
+          <img src="/src/assets/img/carousal/h860.jpg" alt="" style={{ height: 700,width:1600 }} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/src/assets/img/car2.png" alt="" style={{ height: 800 }} />
+          <img src="/src/assets/img/carousal/de4.jpg" alt="" style={{ height: 700,width:1600 }} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/src/assets/img/car5.png" alt="" style={{ height: 800 }} />
+          <img src="/src/assets/img/carousal/fg.jpg" alt="" style={{ height: 700,width:1600}} />
         </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0" ref={progressCircle}>

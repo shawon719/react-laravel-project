@@ -51,9 +51,9 @@ const Navbar = () => {
   const handleRoleSelect = (role) => {
     setSelectedRole(role);
     if (role === "customer") {
-      window.location.href = "/customer_signup";
-    } else if (role === "delivery") {
-      window.location.href = "/delivery_man_signup";
+      window.location.href = "/customersignup";
+    } else if (role === "driver") {
+      window.location.href = "/driversignup";
     } else if (role === "restaurant") {
       window.location.href = "/sales_singup";
     }
@@ -74,6 +74,9 @@ const Navbar = () => {
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
+
+
+
 
   return (
     // // <div
@@ -98,7 +101,7 @@ const Navbar = () => {
 
         {/* Brand Name wrapped in a span */}
         <span className="btn btn-ghost ml-2 text-xl text-[27px] lg:text-[25px]">
-          <a href="/" className="text-white  lg:text-4xl">Courier Service</a>
+          <a href="/" className="text-white  lg:text-4xl">SWIFT DELIVERY</a>
         </span>
       </div>
 
@@ -180,11 +183,11 @@ const Navbar = () => {
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50 mt-60">
           <div className="bg-white p-8 rounded-xl shadow-lg w-96 animate__animated animate__fadeIn animate__faster">
             <h3 className="text-2xl font-semibold text-center mb-6 text-gray-700">
-              Select your Profile Role
+              Select Role
             </h3>
             <div className="flex justify-between mb-6">
               <button
-                className="flex flex-col items-center w-28 p-4 border-2 border-gray-300 rounded-xl hover:bg-gray-100 transition ease-in-out duration-300"
+                className="flex flex-col items-center w-28 p-4 border-2 border-green-300 rounded-xl hover:bg-red-100 transition ease-in-out duration-300"
                 onClick={() => handleRoleSelect("customer")}
               >
                 <FaRegUser className="text-3xl mb-2 text-blue-500" />
@@ -192,20 +195,20 @@ const Navbar = () => {
               </button>
 
               <button
-                className="flex flex-col items-center w-28 p-4 border-2 border-gray-300 rounded-xl hover:bg-gray-100 transition ease-in-out duration-300"
-                onClick={() => handleRoleSelect("delivery")}
+                className="flex flex-col items-center w-28 p-4 border-2 border-green--300 rounded-xl hover:bg-red-100 transition ease-in-out duration-300"
+                onClick={() => handleRoleSelect("driver")}
               >
                 <FaMotorcycle className="text-3xl mb-2 text-yellow-500" />
-                <span className="text-sm font-medium">Delivery</span>
+                <span className="text-sm font-medium">Driver</span>
               </button>
 
-              <button
+              {/* <button
                 className="flex flex-col items-center w-28 p-4 border-2 border-gray-300 rounded-xl hover:bg-gray-100 transition ease-in-out duration-300"
                 onClick={() => handleRoleSelect("restaurant")}
               >
                 <FaStoreAlt className="text-3xl mb-2 text-green-500" />
-                <span className="text-sm font-medium">Restaurant</span>
-              </button>
+                <span className="text-sm font-medium">admin</span>
+              </button> */}
             </div>
             <button
               className="w-full p-3 text-white bg-red-500 hover:bg-red-600 rounded-xl mt-4 transition ease-in-out duration-300"
